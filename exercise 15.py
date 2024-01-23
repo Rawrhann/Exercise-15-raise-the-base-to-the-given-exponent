@@ -19,3 +19,12 @@
 
 base = int(input("Enter a base: "))
 exponent = int(input("Enter an exponent: "))
+
+pre_result = base
+result = 0
+exponent = exponent - 1
+while exponent > 0:
+    pre_result = pre_result * base
+    exponent = exponent - 1
+
+print (pre_result)
