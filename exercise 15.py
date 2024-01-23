@@ -17,3 +17,5 @@
 #5 raises to the power of 4 is: 625 
 #i.e. (5 *5 * 5 *5 = 625)
 
+base = int(input("Enter a base: "))
+exponent = int(input("Enter an exponent: "))
