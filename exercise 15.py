@@ -17,14 +17,16 @@
 #5 raises to the power of 4 is: 625 
 #i.e. (5 *5 * 5 *5 = 625)
 
+def simplify(base, exponent):
+    result = base
+    exponent = exponent - 1
+    while exponent > 0:
+        result = result * base
+        exponent = exponent - 1
+    print ("the result is: ", result)
+
 base = int(input("Enter a base: "))
 exponent = int(input("Enter an exponent: "))
 
-pre_result = base
-result = 0
-exponent = exponent - 1
-while exponent > 0:
-    pre_result = pre_result * base
-    exponent = exponent - 1
+simplify(base,exponent)
 
-print (pre_result)
